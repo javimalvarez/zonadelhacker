@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=UTF-8>
+    <title>Informática</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <style type="text/css">
+        /*h1 {font-family:monospace;font-weigth:bold;font-size:2.4em;color:white;text-shadow:0.1em 0.1em #333;}*/
+        a {
+            font-family: Arial;
+            font-weigth: bold;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        html {
+            font-family: Arial;
+            font-weigth: bold;
+            font-size: 1.2em;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .animated-shadow {
+            color: #ffffff;
+            font: normal 90px monospace;
+            height: 90px;
+            left: 0;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+            animation: move linear 2000ms infinite;
+            z-index: 2
+        }
+
+        /*Animación para rotar las sombras*/
+        @keyframes move {
+            0% {
+                text-shadow:
+                    4px -4px 0 #da0641,
+                    3px -3px 0 #da0641,
+                    2px -2px 0 #da0641,
+                    1px -1px 0 #da0641,
+                    -4px 4px 0 #13f1fc,
+                    -3px 3px 0 #13f1fc,
+                    -2px 2px 0 #13f1fc,
+                    -1px 1px 0 #13f1fc;
+            }
+
+            25% {
+                text-shadow:
+                    -4px -4px 0 #13f1fc,
+                    -3px -3px 0 #13f1fc,
+                    -2px -2px 0 #13f1fc,
+                    -1px -1px 0 #13f1fc,
+                    4px 4px 0 #da0641,
+                    3px 3px 0 #da0641,
+                    2px 2px 0 #da0641,
+                    1px 1px 0 #da0641;
+            }
+
+            50% {
+                text-shadow:
+                    -4px 4px 0 #da0641,
+                    -3px 3px 0 #da0641,
+                    -2px 2px 0 #da0641,
+                    -1px 1px 0 #da0641,
+                    4px -4px 0 #13f1fc,
+                    3px -3px 0 #13f1fc,
+                    2px -2px 0 #13f1fc,
+                    1px -1px 0 #13f1fc;
+            }
+
+            75% {
+                text-shadow:
+                    4px 4px 0 #13f1fc,
+                    3px 3px 0 #13f1fc,
+                    2px 2px 0 #13f1fc,
+                    1px 1px 0 #13f1fc,
+                    -4px -4px 0 #da0641,
+                    -3px -3px 0 #da0641,
+                    -2px -2px 0 #da0641,
+                    -1px -1px 0 #da0641;
+            }
+
+            100% {
+                text-shadow:
+                    4px -4px 0 #da0641,
+                    3px -3px 0 #da0641,
+                    2px -2px 0 #da0641,
+                    1px -1px 0 #da0641,
+                    -4px 4px 0 #13f1fc,
+                    -3px 3px 0 #13f1fc,
+                    -2px 2px 0 #13f1fc,
+                    -1px 1px 0 #13f1fc;
+            }
+        }
+
+        #main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #main>div {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body background="img/fondo.png" alt="Commodore 64">
+    <h1 class="animated-shadow"><a href="https://onedrive.live.com/?id=2484B7D836B14ED0%2117713&cid=2484B7D836B14ED0"
+            target="_blank"><img src="img/folder.png" alt="Directorio actual"></a>Apuntes de informática</h1>
+    <div id="main">
+        <div>
+            <h2>Contenido:</h2>
+            <ul>
+                <li style="list-style-type:disc;color:white;"><a
+                        href="https://onedrive.live.com/?id=2484B7D836B14ED0%217229&cid=2484B7D836B14ED0"
+                        target="_blank">ASIX</a></li><br>
+                <li style="list-style-type:disc;color:white;"><a href="test-daw.html" target="_blank">DAW</a>
+                    <ul>
+                        <li style="list-style-type:disc;color:white;"><a
+                                href="https://1drv.ms/u/s!AtBOsTbYt4QkgcA2jVs1YWQOFfxjjw?e=gQTwWc">Test
+                                DAW</a>
+                        </li>
+                    </ul>
+                </li><br>
+                <li style="list-style-type:disc;color:white;"><a
+                        href="https://onedrive.live.com/?id=2484B7D836B14ED0%2117388&cid=2484B7D836B14ED0"
+                        target="_blank">Ciberseguridad (CETI)</a></li><br>
+                <li style="list-style-type:disc;color:white;"><a
+                        href="https://javimalvarez.github.io/pentesting-resources.github.io/" target="blank">Recursos de
+                        ciberseguridad</a></li><br>
+                <li style="list-style-type:disc;color:white;"><a
+                        href="https://onedrive.live.com/?id=2484B7D836B14ED0%2114256&cid=2484B7D836B14ED0"
+                        target="_blank">CCNA</a></li><br>
+                <li style="list-style-type:disc;color:white;"><a
+                        href="https://onedrive.live.com/?id=2484B7D836B14ED0%2114564&cid=2484B7D836B14ED0"
+                        target="_blank">LPIC (Linux)</a></li><br>
+                <li style="list-style-type:disc;color:white;"><a
+                        href="https://www.dropbox.com/sh/l2g6jx2pluuzvlx/AAD60AB7NBi1xyQVxsNsFI2ra?dl=0">Scripting</a>
+                </li><br>
+                <li style="list-style-type:disc;color:white;"><a
+                        href="https://onedrive.live.com/?id=2484B7D836B14ED0%2116973&cid=2484B7D836B14ED0"
+                        target="_blank">Python</a></li><br>
+                <li style="list-style-type:disc;color:white;"><a href="https://youtube.com/@MarcVenteo"
+                        target="_blank"><img src="img/youtube.png" /></a></li>
+            </ul>
+        </div>
+        <div>
+            <iframe
+                src="https://calendar.google.com/calendar/embed?src=o6p87qs3c4337rkdipp12sgiec%40group.calendar.google.com&ctz=Europe%2FMadrid"
+                style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+</body><br /><br /><br /></br></br></br></br></br></br></br>
+<footer>
+    <div align="center">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons"
+                style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Este web está
+        bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons
+            Reconocimiento 4.0 Internacional</a>
+    </div>
+</footer>
+
+</html>
